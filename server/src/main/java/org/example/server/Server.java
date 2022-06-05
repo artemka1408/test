@@ -1,9 +1,9 @@
-package org.example;
+package org.example.server;
 
 import com.google.common.primitives.Bytes;
 import lombok.Setter;
-import org.example.exception.BadRequestException;
-import org.example.exception.DeadlineExceedException;
+import org.example.server.exception.BadRequestException;
+import org.example.server.exception.DeadlineExceedException;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,7 +12,6 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.time.Instant;
-import java.time.temporal.ChronoUnit;
 
 @Setter
 public class Server {

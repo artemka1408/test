@@ -6,6 +6,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>http-server</artifactId>
+    <packaging>pom</packaging>
     <version>1.0</version>
     <build>
         <plugins>
@@ -19,14 +20,20 @@
             </plugin>
         </plugins>
     </build>
+    <modules>
+        <module>app</module>
+        <module>server</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <lombok.version>1.18.24</lombok.version>
         <guava.version>31.1-jre</guava.version>
+        <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
     </properties>
-<dependencies>
+
+    <dependencies>
     <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
@@ -48,4 +55,6 @@
             <url>https://maven.pkg.github.com/artemka1408/test</url>
         </repository>
     </distributionManagement>
+
+
 </project>
