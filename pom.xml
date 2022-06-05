@@ -7,7 +7,7 @@
     <groupId>org.example</groupId>
     <artifactId>http-server</artifactId>
     <packaging>pom</packaging>
-    <version>1.0</version>
+    <version>1.0.2</version>
     <build>
         <plugins>
             <plugin>
@@ -55,6 +55,5 @@
             <url>https://maven.pkg.github.com/artemka1408/test</url>
         </repository>
     </distributionManagement>
-
 
 </project>
